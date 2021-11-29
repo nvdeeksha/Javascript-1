@@ -1,0 +1,37 @@
+<html>
+<body>
+
+<h2> Strings in JavaScript</h2>
+
+<p id="strings"></p>
+
+<script>
+
+let a = "Deeksha";
+
+let b = new String("John");
+
+document.getElementById("strings").innerHTML =
+typeof a + " " + typeof b;
+</script>
+
+</body>
+</html>
+
+<!-- strings-2 -->
+<html>
+<body>
+
+<h2>Strings cannot be made as Objects</h2>
+<p>JavaScript objects cannot be compared</p>
+
+<p id="string"></p>
+
+<script>
+let a = new String("deeksha");  
+let b = new String("deeksha"); 
+document.getElementById("string").innerHTML = (a==b);
+</script>
+
+</body>
+</html>

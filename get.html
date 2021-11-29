@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<h2>JavaScript get methods</h2>
+<p>This includes time,date,year,months,hours</p>
+
+<p id="demo"></p>
+
+<script>
+ const d = new Date();
+ document.getElementById("demo").innerHTML = d.getTime();
+ const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+ const d = new Date();
+ let month = months[d.getMonth()];
+ document.getElementById("demo").innerHTML = month;
+
+ const d = new Date();
+ document.getElementById("demo").innerHTML = d.getDate();
+
+ const d = new Date();
+ document.getElementById("demo").innerHTML = d.getFullYear();
+
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getHours();
+
+</script>
+
+</body>
+</html>

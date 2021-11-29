@@ -1,0 +1,41 @@
+<html>
+<body>
+
+<h2> Array Sort in JavaScript</h2>
+<p>press the button</p>
+
+<button onclick="myFunction()">Sort</button>
+<p id="cakes"></p>
+
+<script>
+const cakes = [
+  {type:"redvelvet", days:5},
+  {type:"blackforest", days:4},
+  {type:"butterscotch", days:3}
+];
+
+displayCakes();
+
+function myFunction() {
+  cakes.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+  displayCakes();
+}
+
+function displayCakes() {
+  document.getElementById("cakes").innerHTML =
+  cakes[0].type + " " + cakes[0].day + "<br>" +
+  cakes[1].type + " " + cakes[1].day + "<br>" +
+  cakes[2].type + " " + cakes[2].day;
+}
+</script>
+
+</body>
+</html>
+
+

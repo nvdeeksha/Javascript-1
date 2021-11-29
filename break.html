@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<h2>break</h2>
+
+<p>using a break in loop</p>
+
+<p id="break"></p>
+
+<script>
+ text = "";
+for (let i = 0; i < 100; i++) {
+  if (i === 30) { continue; }
+  text += "The number is " + i ;
+}
+document.getElementById("break").innerHTML = text;
+</script>
+
+</body>
+</html>

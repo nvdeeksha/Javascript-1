@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h2>Functions in Javascript</h2>
+
+<p>Outside myFunction() cakeName is undefined.</p>
+
+<p id="cake1"></p>
+
+<p id="cake2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let cakeName = "redvelvet";
+  document.getElementById("cake1").innerHTML =
+  typeof cakeName + " " + cakeName;
+}
+
+document.getElementById("cake2").innerHTML =
+typeof cakeName;
+</script>
+
+</body>
+</html>
