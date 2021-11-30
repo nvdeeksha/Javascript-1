@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h2>uppercases and lowercases</h2>
+<p id="cases"></p>
+
+<script>
+const deeksha = {
+  firstName: "deeksha",
+  lastName: "NV",
+  age: 22,
+};
+deeksha.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+document.getElementById("cases").innerHTML =
+"My name is " + deeksha.name(); 
+</script>
+
+</body>
+</html>

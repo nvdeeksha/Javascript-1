@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h2>prototypes</h2>
+<p id="proto"></p>
+
+<script>
+function deeksha(first, last, age, weight) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.weight = weight;
+}
+
+deeksha.prototype.nationality = "kannada";
+
+const mine = new deeksha("deeksha", "NV", 22, 59);
+document.getElementById("proto").innerHTML =
+"The nationality of mine is " + mine.nationality; 
+</script>
+
+</body>
+</html>
