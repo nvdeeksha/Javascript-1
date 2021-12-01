@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<h2>invoc</h2>
+
+
+<p id="obj"></p>
+
+<script>
+const Object = {
+  firstName:"deeksha",
+  lastName: "nv",
+  fullName: function() {
+    return this;
+  }
+}
+document.getElementById("obj").innerHTML = Object.fullName();
+</script>
+
+</body>
+</html>

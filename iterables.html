@@ -1,0 +1,25 @@
+<html>
+<body>
+<h2>Iterables</h2>
+<p id="num"></p>
+
+<script>
+function Num() {
+  let n = 0;
+  return {
+    next: function() {
+      n += 10;
+      return {value:n, done:false};
+    }
+  };
+}
+
+const n = Num();
+n.next(); 
+n.next(); 
+n.next();
+
+document.getElementById("num").innerHTML = n.next().value;
+</script>
+</body>
+</html>

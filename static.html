@@ -1,0 +1,23 @@
+<html>
+    <head>
+        
+<p id="static"></p>
+
+<script>
+class Cake {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello(x) {
+    return "this is a flavour " + x.name;
+  }
+}
+
+let myCake = new Cake("raspberry");
+document.getElementById("static").innerHTML = Cake.thisisaflavourof(myCake);
+</script>
+</head>
+</html>
+      
+
+ 

@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<h2>OBJECT</h2>
+
+<p id="obj"></p>
+
+<script>
+const myself = {
+  firstName: "deeksha",
+  lastName: "NV",
+  language: "kannada"
+}
+
+Object.defineProperty(myself, "language", {enumerable:false});
+
+document.getElementById("obj").innerHTML = Object.getOwnPropertyNames(myself);
+</script>
+
+</body>
+</html>

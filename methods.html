@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<p id="method"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("method").innerHTML = some;
+}
+
+async function myFunction() {return "Hello";}
+
+myFunction().then(
+  function(value) {myDisplayer(value);}
+);
+</script>
+
+</body>
+</html>

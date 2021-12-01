@@ -1,0 +1,20 @@
+<html>
+<body>
+<h2>MAPS ON CAKES</h2>
+
+<p id="maps"></p>
+
+<script>
+const cakes = new Map([
+  ["vanilla", 500],
+  ["redvelvet", 300],
+  ["blackforest", 200]
+]);
+
+document.getElementById("maps").innerHTML = cakes.get("vanilla");
+document.getElementById("maps").innerHTML = cakes.size;
+document.getElementById("maps").innerHTML = cakes.has("vanilla");
+</script>
+</body>
+</html>
+
