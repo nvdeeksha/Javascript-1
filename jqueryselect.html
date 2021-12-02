@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<p class="intro">Hello everyone</p>
+<p class="intro">welcome to india</p>
+<p class="intro">welcome to bangalore</p>
+
+<p id="select"></p>
+
+<script>
+$(document).ready(function() {
+  var myElements = $(".intro");
+  $("#select").text("The first paragraph with class='intro' is: " + myElements[0].innerHTML);
+});
+</script>
+
+</body>
+</html>
